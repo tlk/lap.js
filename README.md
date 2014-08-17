@@ -22,7 +22,7 @@ Aarhus Open Regatta 2014
 
 1. Gå til "Regattasetup" og tilføj "ÆNDRES I ØJEBLIKKET" i felt 36 (infoStartlist)
 2. Ret filen loebslisteadmin-plus.js
-3. Gentag punkt 1 og 4 fra ovenstående.
+3. Gentag punkt 1 til 4 fra ovenstående.
 4. Generer ny startliste under "Startliste generering"
 5. Opdater manuelt rækkefølge og starttider for indledende løb, se noter i bunden af loebslisteadmin-plus.js
 6. Gå til "Regattasetup" og opdater felt 36 (infoStartlist) med "Sidst opdateret: $tidsstempel (version $version)"
