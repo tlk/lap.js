@@ -58,7 +58,7 @@ function finale_starttider_for_aor2014_loerdag() {
 }
  
 function finale_starttider_for_aor2014_soendag() {
-	juster_loebs_starttid_sekvens([210,211,212,213,214,215,218,216,217,221,225]);
+	juster_loebs_starttid_sekvens([210,211,212,213,214,215,218,216,217,221,222,224,225]);
 	juster_loebs_starttid_sekvens([225,226], 7); // for at give nok tid mellem 218 og 226
 	juster_loebs_starttid_sekvens([226,228,229,230,231,232,241,242,243,245,246,250,251]);
 }
