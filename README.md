@@ -15,7 +15,7 @@ Aarhus Open Regatta 2014
 4. Kør funktionerne for lørdag og søndag:
 	```javascript
 	finale_starttider_for_aor2014_loerdag();
-	finale_starttider_for_aor2014_sondag();
+	finale_starttider_for_aor2014_soendag();
 	```
 
 #### Når der skal laves ændringer
