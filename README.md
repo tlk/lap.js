@@ -9,7 +9,7 @@ Aarhus Open Regatta 2014
 	```javascript
 	(function(d,s){s=d.createElement('script');s.src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js';(d.head||d.documentElement).appendChild(s)})(document);
 	(function(d,s){s=d.createElement('script');s.src='http://momentjs.com/downloads/moment.js';(d.head||d.documentElement).appendChild(s)})(document);
-	(function(d,s){s=d.createElement('script');s.src='http://www.thomaslkjeldsen.com/aarhusopenregatta/loebslisteadmin-plus.js';(d.head||d.documentElement).appendChild(s)})(document);
+	(function(d,s){s=d.createElement('script');s.src='http://tlk.github.io/aarhusopenregatta/loebslisteadmin-plus.js';(d.head||d.documentElement).appendChild(s)})(document);
 	```
 
 4. Kør funktionerne for lørdag og søndag:
