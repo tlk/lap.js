@@ -66,4 +66,4 @@ function finale_starttider_for_aor2014_soendag() {
 // Manuelle rettelser til indledende løb (under Heat administration)
 //   113,145,134inr (kl 9:40), 130 (kl 10:00)
 //   212,245,214,231
-// test
+
