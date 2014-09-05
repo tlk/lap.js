@@ -23,11 +23,11 @@ function juster_loebs_starttid(loeb1, loeb2, loebstid_minutter) {
 			min = 5;
 		}
 
-		var antal_baner = 6;
-		var heats = Math.ceil(l1_tilmeldt / antal_baner);
-		if (heats>1) {
-			min = min * heats;
-		}
+//		var antal_baner = 6;
+//		var heats = Math.ceil(l1_tilmeldt / antal_baner);
+//		if (heats>1) {
+//			min = min * heats;
+//		}
 	}
 
 	var t2 = moment(t1).add({minutes: min}).format("YYYY-MM-DD HH:mm:ss");
