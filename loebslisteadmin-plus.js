@@ -83,3 +83,31 @@ function finale_starttider_for_dm2014() {
 
 // DM manuelle rettelser til indledende løb
 //   løb 103, 135 og 136 rykkes 2 min. frem - alle efterfølgende indledende løb skal justeres tilsvarende
+// 
+
+// Gennemgang af Masters løb:
+//  Løb 111.
+// 6+2 tilmeldte = 8 hold
+// 
+// Opdeles i 111 A MW4X / 3 hold
+// Sorø, Fredensborg, Nordslesvig
+// 
+// 111 B MM4X / 5 hold
+// Fredericia, Aarhus, Fredensborg II, Furesø(Mix hold), DSR
+// 
+// Løb 139
+// 8 stk 2X og 2 stk 1X
+// 
+// Opdeles i:
+// 
+// 139 A MW 1X 2 hold
+// Sorø, Fredensborg
+// 
+// 139 B MW2X 8 hold og indledende heat
+// Sorø I, Sorø II, Sorø III, Fredensborg  II, Fredensborg III, Furesø I, Nordslesvig I, Nordslesvig II 
+// 
+// 140 MM1X - 7 hold og indledende
+// 
+// 
+// 141 MM2X/2- 9 hold og indledende
+// 
