@@ -1,6 +1,9 @@
 Aarhus Open Regatta 2014
 ========================
 
+Planlægning og afvikling af regattaer under DfFR bliver styret via http://regattaadmin.dk som er et specialiseret system med mange gode funktioner. Når man arrangerer et regatta er der en fase efter den ordinære tilmeldingsfrist, hvor regatta-sekretariatet udarbejder en startliste med starttidspunkter for finaleløbene. Denne fase kan være smertefuld for sekretariatet, da ændring af starttidspunkt for et finaleløb typisk medfører at starttidspunkt for samtlige følgende finaleløb skal ændres. Disse ændringer skal pt laves manuelt. Efter at have brugt lang tid på manuelt at lave en ubrugelig startliste med imponerende mange fejl, skrev jeg et lille hjælpeværktøj til regattaadmin. Med dette hjælpeværktøj kan man nøjes med at angive rækkefølge for finaleløbene, samt hvor lang tid der skal være mellem hvert løb. Ud fra disse oplysninger beregner hjælpeværktøjet starttiderne for de valgte finaleløb og sætter tidspunkterne ind i regattaadmin. Det gør det noget hurtigere at lave ændringer i startlisten, og mindsker risikoen for slåfejl og lignende.
+
+
 #### Sådan styres starttidspunkterne for finaleløbene
 
 1. Åben "Løbsliste Administration" i Chrome
