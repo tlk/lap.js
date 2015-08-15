@@ -58,7 +58,6 @@ function finale_starttider_for_aor2015_loerdag() {
 }
  
 function finale_starttider_for_aor2015_soendag() {
-	juster_loebs_starttid_sekvens([206,207,208,209,211,212,213,214,215,216,217,218,219,222,224,225,226,228,230,231,232,233,234,235,236,238,244,248,250,251,254]);
-	juster_loebs_starttid_sekvens([224,227]); // 227 roes sammen med 225
+	juster_loebs_starttid_sekvens([206,207,208,209,211,212,213,214,215,216,217,218,219,222,224,225,226,228,230,231,232,233,234,235,236,238,244,245,248,250,251,254]);
 }
 
