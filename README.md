@@ -1,5 +1,5 @@
-Udvidelse til regattaadmin
-==========================
+Udvidelse til regattaadmin: lap.js
+==================================
 
 Planlægning og afvikling af regattaer under DFfR bliver styret via
 http://regattaadmin.dk som er et specialiseret system med mange gode
@@ -22,7 +22,7 @@ fejl.
 2. Åben udviklerkonsollen (Vis, Udvikler, Udviklerværktøjer)
 3. Kopier nedenstående linje til udviklerkonsollen og tryk <kbd>Enter</kbd> for at indlæse udvidelsen:
 ```javascript
-(function(d,s){s=d.createElement('script');s.src='http://tlk.github.io/aarhusopenregatta/lap.js';(d.head||d.documentElement).appendChild(s)})(document);
+(function(d,s){s=d.createElement('script');s.src='http://tlk.github.io/lap.js/lap.js';(d.head||d.documentElement).appendChild(s)})(document);
 ```
 
 Bemærk: ovenstående procedure skal følges hver gang løbsliste administrationen åbnes.
