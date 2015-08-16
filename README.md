@@ -1,4 +1,4 @@
-Aarhus Open Regatta - udvidelse til regatatadmin
+Aarhus Open Regatta - udvidelse til regattaadmin
 ================================================
 
 Planlægning og afvikling af regattaer under DfFR bliver styret via
