@@ -1,12 +1,12 @@
-Aarhus Open Regatta - udvidelse til regattaadmin
-================================================
+Udvidelse til regattaadmin
+==========================
 
-Planlægning og afvikling af regattaer under DfFR bliver styret via
+Planlægning og afvikling af regattaer under DFfR bliver styret via
 http://regattaadmin.dk som er et specialiseret system med mange gode
 funktioner. Når man arrangerer et regatta er der en fase efter den ordinære
 tilmeldingsfrist, hvor regatta-sekretariatet udarbejder en tidsplan med
 starttidspunkter for finaleløbene. Denne fase kan være langvarig, da ændring af
-starttidspunkt for et finaleløb typisk medfører at starttidspunkt for samtlige
+starttidspunkt for et finaleløb typisk medfører at starttidspunkt for alle
 følgende finaleløb skal ændres manuelt.
 
 Jeg har lavet en lille udvidelse til regattadmin sådan at man kan skrive en
@@ -57,7 +57,7 @@ Hvis starttidspunktet for alle finaleløb skal justeres, skal man rette tidspunk
 #### Rækkefølge og løb der skal roes sammen
 
 * Løbsnumre kan listes i rækkefølge, hvorefter udvidelsen justerer starttidspunkt for hvert løb 
-* Hvis man skriver "5min mellem" efter en liste af løbsnumre, så vil løbenes starttider justeres så der er 5 minutter mellem hvert løb
+* Hvis man skriver "5min mellem" efter en liste af løbsnumre, så bliver løbenes starttider justeret så der er 5 minutter mellem hvert løb
 * Løb der skal roes sammen kan angives ved hjælp af nøgleordet "sammen"
 
 
