@@ -41,7 +41,7 @@ var LoebslisteAdminPlus = function() {
 
 			console.debug(line);
 
-			if (line.match("SAMMEN")) {
+			if (line.match("SAMME")) {
 				juster_til_samme_starttid_sekvens(line.match(/\d+/g));
 			} else if (line.match("MELLEM") && line.match(/\d+MIN/).length === 1) {
 				tmp = line.match(/\d+MIN/)[0];
