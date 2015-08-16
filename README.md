@@ -57,7 +57,7 @@ Hvis starttidspunktet for alle finaleløb skal justeres, skal man rette tidspunk
 #### Rækkefølge og løb der skal roes sammen
 
 * Løbsnumre kan listes i rækkefølge, hvorefter udvidelsen justerer starttidspunkt for hvert løb 
-* Hvis man skriver "5min mellem" efter en liste af løbsnumre, så vil løbenes starttider justeres så der er 5 minutter mellem hvert løb
+* Hvis man skriver "5min mellem" efter en liste af løbsnumre, så bliver løbenes starttider justeret så der er 5 minutter mellem hvert løb
 * Løb der skal roes sammen kan angives ved hjælp af nøgleordet "sammen"
 
 
