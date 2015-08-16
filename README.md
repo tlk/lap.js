@@ -36,7 +36,7 @@ Bemærk: ovenstående procedure skal følges hver gang løbsliste administration
 Hvis starttidspunktet for alle finaleløb skal justeres, skal man rette tidspunktet for det første løb manuelt i den store tabel, hvorefter man kan oversætte løbsopskriften til starttider. Løbsopskrifter kan gemmes i `localStorage` og vil herefter automatisk blive indlæst på den computer som de er blevet gemt på (og kun den). Løbsopskrifter kan nemt kopieres ind i en email, sådan at man selv og andre har en kopi af den aktuelle løbsopskrift. 
 
 ## Syntaks for løbsopskrifter
-Eksempel
+#### Eksempel
 ```
 100,101,102,103,104,110,113,114,115,116,117,118
 104 og 105 roes sammen
