@@ -1,12 +1,12 @@
 Udvidelse til regattaadmin
 ==========================
 
-Planlægning og afvikling af regattaer under DfFR bliver styret via
+Planlægning og afvikling af regattaer under DFfR bliver styret via
 http://regattaadmin.dk som er et specialiseret system med mange gode
 funktioner. Når man arrangerer et regatta er der en fase efter den ordinære
 tilmeldingsfrist, hvor regatta-sekretariatet udarbejder en tidsplan med
 starttidspunkter for finaleløbene. Denne fase kan være langvarig, da ændring af
-starttidspunkt for et finaleløb typisk medfører at starttidspunkt for samtlige
+starttidspunkt for et finaleløb typisk medfører at starttidspunkt for alle
 følgende finaleløb skal ændres manuelt.
 
 Jeg har lavet en lille udvidelse til regattadmin sådan at man kan skrive en
