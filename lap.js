@@ -39,8 +39,6 @@ var LoebslisteAdminPlus = function() {
 
 			line = line.replace(/---.*/g, "");
 
-			console.debug(line);
-
 			if (line.match("SAMME")) {
 				juster_til_samme_starttid_sekvens(line.match(/\d+/g));
 			} else if (line.match("MELLEM") && line.match(/\d+MIN/).length === 1) {
@@ -50,8 +48,6 @@ var LoebslisteAdminPlus = function() {
 				juster_loebs_starttid_sekvens(line.match(/\d+/g), min);
 			} else if (line.match(/\d+/)) {
 				juster_loebs_starttid_sekvens(line.match(/\d+/g));
-			} else {
-				console.debug("SKIP");
 			}
 		}
 	}
@@ -112,7 +108,6 @@ var LoebslisteAdminPlus = function() {
 
 	juster_loebs_starttid_sekvens = function(sekvens, loebstid_minutter) {
 		if (!assert_sekvens(sekvens)) return;
-console.debug("juster_loebs_starttid_sekvens", sekvens, loebstid_minutter);
 		for (var i=0; i<sekvens.length -1; i++) {
 			juster_loebs_starttid(sekvens[i], sekvens[i+1], loebstid_minutter);
 		}
