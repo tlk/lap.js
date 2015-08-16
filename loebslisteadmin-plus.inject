@@ -1,7 +1,0 @@
-
-(function(d,s){s=d.createElement('script');s.src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js';(d.head||d.documentElement).appendChild(s)})(document);
-(function(d,s){s=d.createElement('script');s.src='http://momentjs.com/downloads/moment.js';(d.head||d.documentElement).appendChild(s)})(document);
-(function(d,s){s=d.createElement('script');s.src='http://www.thomaslkjeldsen.com/loebslisteadmin-plus.js';(d.head||d.documentElement).appendChild(s)})(document);
-
-
-

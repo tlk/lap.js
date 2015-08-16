@@ -1,31 +1,64 @@
 Aarhus Open Regatta 2014
 ========================
 
-Planlægning og afvikling af regattaer under DfFR bliver styret via http://regattaadmin.dk som er et specialiseret system med mange gode funktioner. Når man arrangerer et regatta er der en fase efter den ordinære tilmeldingsfrist, hvor regatta-sekretariatet udarbejder en startliste med starttidspunkter for finaleløbene. Denne fase kan være smertefuld for sekretariatet, da ændring af starttidspunkt for et finaleløb typisk medfører at starttidspunkt for samtlige følgende finaleløb skal ændres. Disse ændringer skal pt laves manuelt. Efter at have brugt lang tid på manuelt at lave en ubrugelig startliste med imponerende mange fejl, skrev jeg et lille hjælpeværktøj til regattaadmin. Med dette hjælpeværktøj kan man nøjes med at angive rækkefølge for finaleløbene, samt hvor lang tid der skal være mellem hvert løb. Ud fra disse oplysninger beregner hjælpeværktøjet starttiderne for de valgte finaleløb og sætter tidspunkterne ind i regattaadmin. Det gør det noget hurtigere at lave ændringer i startlisten, og mindsker risikoen for slåfejl og lignende.
+Planlægning og afvikling af regattaer under DfFR bliver styret via
+http://regattaadmin.dk som er et specialiseret system med mange gode
+funktioner. Når man arrangerer et regatta er der en fase efter den ordinære
+tilmeldingsfrist, hvor regatta-sekretariatet udarbejder en tidsplan med
+starttidspunkter for finaleløbene. Denne fase kan være langvarig, da ændring af
+starttidspunkt for et finaleløb typisk medfører at starttidspunkt for samtlige
+følgende finaleløb skal ændres manuelt.
+
+Jeg har lavet en lille udvidelse til regattadmin sådan at man kan skrive en
+*løbsopskrift* for at angive rækkefølge for finaleløbene, hvor lang tid der
+skal være mellem hvert løb og hvilke løb der skal roes sammen. Ud fra en
+løbsopskrift kan udvidelsen automatisk justere starttiderne i regattaadmin. Det
+gør det noget hurtigere at lave ændringer i tidsplanen og mindsker risikoen for
+fejl.
 
 
-#### Sådan styres starttidspunkterne for finaleløbene
-
+## Aktiver udvidelsen
 1. Åben "Løbsliste Administration" i Chrome
 2. Åben udviklerkonsollen (Vis, Udvikler, Udviklerværktøjer)
-3. Indlæs javascript-filer:
+3. Indlæs udvidelsen
 	```javascript
-	(function(d,s){s=d.createElement('script');s.src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js';(d.head||d.documentElement).appendChild(s)})(document);
-	(function(d,s){s=d.createElement('script');s.src='http://momentjs.com/downloads/moment.js';(d.head||d.documentElement).appendChild(s)})(document);
-	(function(d,s){s=d.createElement('script');s.src='http://tlk.github.io/aarhusopenregatta/loebslisteadmin-plus.js';(d.head||d.documentElement).appendChild(s)})(document);
+	(function(d,s){s=d.createElement('script');s.src='http://tlk.github.io/aarhusopenregatta/lap.js';(d.head||d.documentElement).appendChild(s)})(document);
 	```
 
-4. Kør funktionerne for lørdag og søndag:
-	```javascript
-	finale_starttider_for_aor2014_loerdag();
-	finale_starttider_for_aor2014_soendag();
-	```
+Bemærk: ovenstående skal gøres hver gang løbsliste administrationen åbnes.
 
-#### Når der skal laves ændringer
+![alt text](https://github.com/tlk/aarhusopenregatta/raw/master/screenshot.png "Example")
 
-1. Gå til "Regattasetup" og tilføj "ÆNDRES I ØJEBLIKKET" i felt 36 (infoStartlist)
-2. Ret filen loebslisteadmin-plus.js
-3. Gentag punkt 1 til 4 fra ovenstående.
-4. Generer ny startliste under "Startliste generering"
-5. Opdater manuelt rækkefølge og starttider for indledende løb, se noter i bunden af loebslisteadmin-plus.js
-6. Gå til "Regattasetup" og opdater felt 36 (infoStartlist) med "Sidst opdateret: $tidsstempel (version $version)"
+
+## Sådan styres starttidspunkterne for finaleløbene
+1. Skriv en løbsopskrift i tekstfeltet
+2. Tryk på knappen "Oversæt opskrift til starttider"
+3. Gem som normalt ved at trykke på knappen "Opdater hele løbslisten", som vises i bunden af løbslisten
+
+Hvis starttidspunktet for alle finaleløb skal justeres, skal man rette tidspunktet for det første løb manuelt i den store tabel, hvorefter man kan oversætte løbsopskriften til starttider. Løbsopskrifter kan gemmes i `localStorage` og vil herefter automatisk blive indlæst på den computer som de er blevet gemt på. Løbsopskrifter kan nemt kopieres ind i en email, sådan at man selv og andre har en kopi af den aktuelle løbsopskrift. 
+
+## Syntaks for løbsopskrifter
+Eksempel
+```
+100,101,102,103,104,110,113,114,115,116,117,118
+104 og 105 roes sammen
+118,120,121,122,124,125,126,127 med 7min mellem hvert løb
+127 og 177 roes sammen --- 177 uden for konkurrence
+127,128,129,130,131,136,139,142,143,145,146
+```
+
+### Generelt
+
+* Hver linje i en opskrift håndteres enkeltvist
+* Der skal minimum angives to løbsnumre på en linje
+* Tidspunktet for det første løbsnummer bruges som udgangspunkt til at justere de følgende løbs starttid (på samme linje)
+* Alt hvad der står på højre side af `---` er en kommentar
+* Tomme linjer og kommentarer ignoreres
+
+
+### Rækkefølge og løb der skal roes sammen
+
+* Løbsnumre kan listes i rækkefølge, hvorefter udvidelsen justerer starttidspunkt for hvert løb 
+* Hvis man skriver "5min mellem" efter en liste af løbsnumre, så vil løbenes starttider justeres så der er 5 minutter mellem hvert løb
+* Løb der skal roes sammen kan angives ved hjælp af nøgleordet "sammen"
+
