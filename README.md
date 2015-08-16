@@ -49,9 +49,9 @@ Eksempel
 
 * Hver linje i en opskrift håndteres enkeltvist
 * Der skal minimum angives to løbsnumre på en linje
-* Tidspunktet for det første løbsnummer bruges som udgangspunkt til at justere de følgende løbs starttid (på samme linje)
+* Tidspunktet for det første løbsnummer på en linje bruges som udgangspunkt til at justere de følgende løbs starttid
 * Alt hvad der står på højre side af `---` er en kommentar
-* Tomme linjer og kommentarer ignoreres
+* Kommentarer og tomme linjer ignoreres
 
 
 #### Rækkefølge og løb der skal roes sammen
